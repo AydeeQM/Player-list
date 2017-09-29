@@ -54,6 +54,7 @@ body {
 
 .stats td:last-child {
     text-align: left;
+    color:#fafafa;
 }
 
 .stopwatch {
@@ -66,6 +67,7 @@ body {
 .stopwatch-time {
   font-family: monospace;
   font-size: 2em;
+  color: #fafafa;
 }
 
 .stopwatch button {

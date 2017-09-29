@@ -16,6 +16,11 @@ let players = [
   },
 ];
 
+function sum (){
+  let total = players.reduce((prev, cur) => prev + cur.score, 0);
+  return total;
+}
+
 const Header = (props) => {
   return (
     <header>
@@ -28,13 +33,13 @@ const Header = (props) => {
             </tr>
             <tr>
               <td>TOTAL POINTS:</td>
-              <td>{}</td>
+              <td>{sum(players)}</td>
             </tr>
           </tbody></table>
         </div>
         <div className="stopwatch">
           <h2>STOPWATH</h2>
-          <div className="stopwatch-time">{}</div>
+          <div className="stopwatch-time">0</div>
           <button>start</button>
           <button>reset</button>
         </div>
